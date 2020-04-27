@@ -28,5 +28,5 @@ echo '' >> /etc/bash.bashrc
 echo 'export DOTNET_ROOT=$HOME/dotnet' >> /etc/bash.bashrc
 echo 'export PATH=$PATH:$HOME/dotnet' >> /etc/bash.bashrc
 
-echo 'Finished script. Type "dotnet" to verify if the installation succeeded. A restrart of you machine may be needed'
+echo 'Finished script. Type "dotnet" to verify if the installation succeeded. A restart of you machine may be needed'
 
