@@ -20,7 +20,7 @@ echo 'Update the env variables'
 export DOTNET_ROOT=$HOME/dotnet
 export PATH=$PATH:$HOME/dotnet
 
-echo 'PATH should be updated'
+echo 'PATH should be updated now'
 echo $PATH
 
 echo 'Now update the bash rc to make the env variables permanent'
