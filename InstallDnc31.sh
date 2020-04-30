@@ -4,7 +4,7 @@ echo 'Firts update and install wget'
 apt update
 apt install wget
 
-## Do not forget to ubuntu change the version number if needed!!
+## Do not forget to change the ubuntu version number if needed!!
 wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
 add-apt-repository universe
