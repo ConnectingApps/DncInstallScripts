@@ -21,4 +21,4 @@ docker build -t dnc .
 
 The installed sdk version will be shown after this message:
 
->> These sdks are installed now
+> These sdks are installed now
