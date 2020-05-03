@@ -16,8 +16,10 @@ This script does not have that problem since it does not use `install dotnet-sdk
 To test the script in a docker environment, type:
 
 ````bash
-docker build -t dnc .
+docker build --build-arg version="20.04" -t dnc .
 ````
+
+The version can be replaced by any other supported Ubuntu version.
 
 The installed sdk version will be shown after this message:
 
