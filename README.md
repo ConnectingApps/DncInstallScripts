@@ -4,7 +4,7 @@ Install scripts for .NET Core.
 
 ## InstallDnc31.sh
 
-The first script that has been added is InstallDnc31.sh . It installs .NET Core 3.1 on Ubuntu 20.04 .
+The first script that has been added is InstallDnc31.sh . It installs .NET Core 3.1 on Ubuntu (including 20.04).
 You can easily modify it to install it on a different Ubuntu version by making a small modification.
 
 The problem it solves is that the [officially provided install instructions](https://docs.microsoft.com/en-us/dotnet/core/install/linux-package-manager-ubuntu-1804#install-the-net-core-sdk) have an issue as quoted here.

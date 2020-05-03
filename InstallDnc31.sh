@@ -4,8 +4,15 @@ echo 'Firts update and install wget'
 apt -y update
 apt -y install wget
 
-## Do not forget to change the ubuntu version number if needed!!
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+echo 'Derive the download link based on the version information'
+versionInfo=`cat /etc/issue | grep Ubuntu`
+IFS=' ' read -r -a versionArray <<< $versionInfo
+actualVersion=`printf '%-.5s' "${versionArray[1]}"`
+downloadLink="https://packages.microsoft.com/config/ubuntu/${actualVersion}/packages-microsoft-prod.deb"
+echo $downloadLink
+
+echo 'Now start downloading'
+wget $downloadLink -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
 add-apt-repository universe
 apt-get -y update
