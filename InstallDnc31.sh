@@ -37,7 +37,9 @@ echo 'export PATH=$PATH:$HOME/dotnet' >> /etc/bash.bashrc
 
 echo 'Finished installation. Type "dotnet" to verify if the installation succeeded. A restart of your machine may be needed'
 echo 'These sdks are installed now'
-/root/dotnet/dotnet --list-sdks
+$HOME/dotnet/dotnet --list-sdks
+echo 'On this Ubuntu version'
+cat /etc/issue
 echo 'Finished installation checks'
 
 echo 'Remove redundant files'
